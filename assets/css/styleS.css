@@ -1,0 +1,125 @@
+/* DEFINE AREAS DA TELA */
+
+.container {
+  display: grid;
+  grid-template: 10vh 90vh/1fr;
+  grid-template-areas:
+    "h"
+    "m";
+}
+
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+/* INICIO DO CABEÇALHO */
+
+header {
+  background-color: #a24219;
+  height: 100%;
+  grid-area: h;
+  display: grid;
+  grid-template: 1fr 2fr 1fr/ 1fr 1.5fr 1fr;
+}
+
+header > .logo {
+  width: 100%;
+  height: 100%;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+header > .voltar {
+  margin-left: 50px;
+  margin-top: 5px;
+  width: 25%;
+  height: 75%;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+header > .menu {
+}
+
+
+/* INICIO DO CORPO */
+
+main {
+  background-color: #d6a459;
+  height: 100%;
+  grid-area: m;
+  display: grid;
+  grid-template: 0.3fr 0.2fr 2fr 1fr/ 1fr 1fr 1fr;
+}
+
+.triangulodir { 
+  width: 0; 
+  height: 0;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid #a24219;
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+
+.trianguloesq {
+  width: 1; 
+  height: 0;
+  border-bottom: 50px solid transparent; 
+  border-right: 50px solid #a24219;
+  grid-row: 1/1;
+  grid-column: 3/3;
+}
+
+.pesquisa{
+  grid-row: 1/2;
+  grid-column: 1/4;
+  height: 50%;
+  width: 60%;
+  justify-self:center;
+  align-self:center;
+}
+
+#divBusca{
+  background-color:#cf8e2d;
+  border:solid 1px;
+  border-radius:15px;
+  height: 80%;
+  width:100%;
+  padding-top: 15px;
+}
+ 
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:15px;
+  font-style:italic;
+  font-size:30px;
+  border:none;
+  height:40px;
+  width:85%;
+}
+
+.titulo{
+  background-color: #cf8e2d;
+  grid-row: 2/2;
+  grid-column: 1/3;
+  height: 70%;
+  width: 0%;
+  font-family: libre baskerville, serif;
+  font-size: 4rem;
+  justify-self:start;
+  align-self:center;
+}
+
+.produtos{
+  grid-row: 3/4;
+  grid-column: 1/4;
+  display: grid;
+  padding: 30px;
+  grid-gap: 15px;
+  grid-template: 1fr 1fr 1fr/ 1.5fr 1.5fr 1.5fr;
+  justify-content: center;
+  align-content: center;
+}

@@ -1,0 +1,104 @@
+/* DEFINE AREAS DA TELA */
+
+.container {
+  display: grid;
+  grid-template: 25vh 10vh 85vh/1fr;
+  grid-template-areas:
+    "h"
+    "m"
+    "f";
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+/* INICIO DO CABEÇALHO */
+
+header {
+  background-color: #026c7d;
+  height: 100%;
+  grid-area: h;
+  display: grid;
+  grid-template: 1fr 1fr 4fr/ 1fr 1.5fr 1fr;
+}
+
+.voltar{
+  width: 30%;
+  height: 100%;
+  grid-row: 2/3;
+  grid-column: 1/1;
+  margin: 15px;
+}
+
+.foto{
+  grid-row: 3/4;
+  grid-column: 2/2;
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  justify-self:center;
+  align-self:center;
+}
+
+
+/* INICIO DO CORPO */
+
+main {
+  background-color: #a24219;
+  height: 100%;
+  grid-area: m;
+  display: grid;
+  grid-template: 1.5fr 1.5fr/ 1fr 2fr 1fr;
+}
+
+.text1{
+  grid-row: 1/1;
+  grid-column: 2/2;
+  font-family: fira sans thin, sans-serif;
+  font-size: 2rem;
+  justify-self:center;
+  align-self:center;
+}
+
+.text2{
+  grid-row: 2/2;
+  grid-column: 2/2;
+  font-family: fira sans thin, sans-serif;
+  font-size: 2rem;
+  justify-self:center;
+  align-self:center;
+}
+
+
+/* INICIO DO CABECALHO */
+
+footer {
+  background-color: #d6a459;
+  height: 100%;
+  grid-area: f;
+  display: grid;
+  grid-gap: 5px;
+  grid-template: 0.5fr 1fr 5fr 1fr 1fr/ 1fr;
+}
+
+.linha{
+  background-color: #a24219;
+  grid-row: 2/2;
+  grid-column: 1;
+  font-family: libre baskerville, serif;
+  font-size: 3rem;
+}
+
+.post{
+  grid-row: 3/3;
+  grid-column: 1;
+}
+
+.finalzin{
+  background-color: #d6a459;
+  grid-row: 5/5;
+  grid-column: 1;
+}
+

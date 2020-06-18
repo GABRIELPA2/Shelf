@@ -1,0 +1,110 @@
+/* DEFINE AREAS DA TELA */
+
+.container {
+  display: grid;
+  grid-template: 10vh 90vh/1fr;
+  grid-template-areas:
+    "h"
+    "m";
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+/* INICIO DO CABEÇALHO */
+
+header {
+  background-color: #a24219;
+  height: 100%;
+  grid-area: h;
+  display: grid;
+  grid-template: 1fr 2fr 1fr/ 1fr 1.5fr 1fr;
+}
+
+header > .logo {
+  width: 100%;
+  height: 100%;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+header > .voltar {
+  margin-left: 50px;
+  margin-top: 5px;
+  width: 25%;
+  height: 75%;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+
+/* INICIO DO CORPO */
+
+main {
+  background-color: #d6a459;
+  height: 100%;
+  grid-area: m;
+  display: grid;
+  grid-template: 1fr 12fr 0.3fr/ 1fr;
+}
+
+.pesquisa{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  height: 50%;
+  width: 60%;
+  justify-self:center;
+  align-self:center;
+}
+
+#divBusca{
+  background-color:#cf8e2d;
+  border:solid 1px;
+  border-radius:15px;
+  height: 80%;
+  width:100%;
+  padding-top: 15px;
+}
+ 
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:15px;
+  font-style:italic;
+  font-size:30px;
+  border:none;
+  height:40px;
+  width:85%;
+}
+
+.list{
+  
+  grid-row: 2/3;
+  grid-column: 1/1;
+  display: grid;
+  height: 90%;
+  width: 90%;
+  grid-gap: 10px;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr/1fr;
+  justify-self:center;
+  align-self:center;
+}
+
+.list > div{
+  background-color: #cf8e2d;
+  border: 1px solid #026c7d;
+  display: grid;
+  grid-template: 1fr/1fr 8fr;
+}
+
+.num{
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.escrita{
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
