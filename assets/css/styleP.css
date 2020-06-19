@@ -151,7 +151,6 @@ footer {
 }
 
 .maior{
-  background-color: #7159c1;
   grid-row: 1/1;
   grid-column: 1/1;
   width: 80%;
@@ -161,7 +160,6 @@ footer {
 }
 
 .menor{
-  background-color: #7159c1;
   grid-row: 1/1;
   grid-column: 2/2;
   width: 80%;
